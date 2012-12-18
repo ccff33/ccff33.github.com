@@ -1,0 +1,216 @@
+/* --------------------------------------------------------------- */
+/* ------------------------ common ------------------------------- */
+
+@import url("http://fonts.googleapis.com/css?family=Monda");
+
+header, footer, section, nav {
+    display: block;
+}
+
+header, footer, body, section, nav, div, ul, li, a, img {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(bottom, #333340 20%, #555560 70%);
+    background-image: -o-linear-gradient(bottom, #333340 20%, #555560 70%);
+    background-image: -moz-linear-gradient(bottom, #333340 20%, #555560 70%);
+    background-image: -webkit-linear-gradient(bottom, #333340 20%, #555560 70%);
+    background-image: -ms-linear-gradient(bottom, #333340 20%, #555560 70%);
+
+    background-image: -webkit-gradient(
+        linear,
+	left bottom,
+	left top,
+	color-stop(0.2, #333340),
+	color-stop(0.7, #555560)
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#555560', endColorstr='#333340');
+    color: rgb(200, 200, 200);
+    font-size: 20px;
+    font-family: "Monda", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+}
+
+a img {
+    border: none;
+}
+
+/* --------------------------------------------------------------- */
+/* -------------------------- nav -------------------------------- */
+
+nav {
+    border-bottom: 1px solid rgb(120, 120, 120);
+    box-shadow: 0 0 4px rgb(20, 20, 20);
+    -moz-box-shadow: 0 0 4px rgb(20, 20, 20);
+    -o-box-shadow: 0 0 4px rgb(20, 20, 20);
+    -webkit-box-shadow: 0 0 4px rgb(20, 20, 20);
+    -ms-box-shadow: 0 0 4px rgb(20, 20, 20);
+    background: rgba(80, 80, 80, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    line-height: 46px;
+    height: 46px;
+    z-index: 1;
+    font-family: "Monda", sans-serif;
+    font-size: 0.9em;
+}
+
+nav ul {
+    display: inline;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 6px;
+    padding: 6px;
+}
+
+nav a {
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+}
+
+nav a:hover {
+    color: rgb(180, 220, 170);
+}
+
+/* --------------------------------------------------------------- */
+/* ------------------------- sections ---------------------------- */
+
+section {
+    height: 500px;
+    width: 960px;
+    padding: 150px;
+    margin-bottom: 700px;
+    color: rgb(220, 250, 200);
+}
+
+section:last-of-type {
+    margin-bottom: 0;
+}
+
+section a {
+    color: rgb(200, 200, 200);
+    text-decoration: underline;
+}
+
+section article {
+    box-shadow: 0 0 2px #111;
+    -moz-box-shadow: 0 0 2px #111;
+    -o-box-shadow: 0 0 2px #111;
+    -webkit-box-shadow: 0 0 2px #111;
+    -ms-box-shadow: 0 0 2px #111;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -ms-border-radius: 6px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+section .left {
+    width: 600px;
+    float: left;
+}
+
+section .right {
+    float: right;
+}
+
+section#intro h1 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 5em;
+}
+
+section#contacts article {
+    padding: 6px;
+    text-align: center;
+    height: 143px;
+}
+
+section#contacts img {
+    margin: 6px;
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    -o-opacity: 0.8;
+    -webkit-opacity: 0.8;
+    -ms-opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+section#contacts img:hover {
+    opacity: 1;
+    -moz-opacity: 1;
+    -o-opacity: 1;
+    -webkit-opacity: 1;
+    -ms-opacity: 1;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    -webkit-border-radius: 0;
+    -ms-border-radius: 0;
+}
+
+/* --------------------------------------------------------------- */
+/* --------------------------- icons ----------------------------- */
+
+.green-icon {
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    background: rgb(146, 195, 113);
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.blue-icon {
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    background: rgb(32, 80, 129);
+    border: 1px solid rgb(200, 200, 200);
+}
+
+/* --------------------------------------------------------------- */
+/* ------------------------ skills chart ------------------------- */
+
+#skills-container {
+    width: 300px;
+    height: 230px;
+    margin: 0 auto;
+}
+
+/* --------------------------------------------------------------- */
+/* ----------------------- hobbies list -------------------------- */
+
+.hobbies {
+    display: inline;
+    list-style: none;
+}
+
+.hobbies li {
+    display: inline;
+}
