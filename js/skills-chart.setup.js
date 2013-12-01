@@ -4,7 +4,7 @@ $(function () {
         Highcharts.setOptions(Highcharts.theme);
     
         var colors = Highcharts.getOptions().colors;
-        var categories = ['PHP', 'Ruby', 'HTML', 'C#', 'CSS'];
+        var categories = ['PHP', 'Ruby', 'C#'];
         var name = 'Technical Skills';
         var data = [{
             y: 100,
@@ -13,14 +13,8 @@ $(function () {
             y: 60,
             color: colors[1]
         }, {
-            y: 100,
-            color: colors[2]
-        }, {
-            y: 60,
+            y: 70,
             color: colors[3]
-        }, {
-            y: 60,
-            color: colors[4]
         }
         ];
    

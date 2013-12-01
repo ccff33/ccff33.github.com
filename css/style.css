@@ -13,20 +13,7 @@ header, footer, body, section, nav, div, ul, li, a, img {
 }
 
 body {
-    background-image: linear-gradient(bottom, #333340 20%, #555560 70%);
-    background-image: -o-linear-gradient(bottom, #333340 20%, #555560 70%);
-    background-image: -moz-linear-gradient(bottom, #333340 20%, #555560 70%);
-    background-image: -webkit-linear-gradient(bottom, #333340 20%, #555560 70%);
-    background-image: -ms-linear-gradient(bottom, #333340 20%, #555560 70%);
-
-    background-image: -webkit-gradient(
-        linear,
-	left bottom,
-	left top,
-	color-stop(0.2, #333340),
-	color-stop(0.7, #555560)
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#555560', endColorstr='#333340');
+    background-color: #333340;
     color: rgb(200, 200, 200);
     font-size: 20px;
     font-family: "Monda", sans-serif;
@@ -109,16 +96,6 @@ section a {
 }
 
 section article {
-    box-shadow: 0 0 2px #111;
-    -moz-box-shadow: 0 0 2px #111;
-    -o-box-shadow: 0 0 2px #111;
-    -webkit-box-shadow: 0 0 2px #111;
-    -ms-box-shadow: 0 0 2px #111;
-    border-radius: 6px;
-    -moz-border-radius: 6px;
-    -o-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -ms-border-radius: 6px;
     padding: 20px;
     overflow: hidden;
 }
