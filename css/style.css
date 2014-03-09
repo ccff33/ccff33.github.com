@@ -3,181 +3,17 @@
 
 @import url("http://fonts.googleapis.com/css?family=Monda");
 
-header, footer, section, nav {
-    display: block;
-}
-
-header, footer, body, section, nav, div, ul, li, a, img {
-    margin: 0 auto;
-    padding: 0;
-}
-
+html,
 body {
-    background-color: #333340;
-    color: rgb(200, 200, 200);
-    font-size: 20px;
+    height: 100%;
+    background-color: #333338;
     font-family: "Monda", sans-serif;
+    color: #eeeeee;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
-a {
-    text-decoration: none;
-    border: none;
-}
-
-a img {
-    border: none;
-}
-
-/* --------------------------------------------------------------- */
-/* -------------------------- nav -------------------------------- */
-
-nav {
-    border-bottom: 1px solid rgb(120, 120, 120);
-    box-shadow: 0 0 4px rgb(20, 20, 20);
-    -moz-box-shadow: 0 0 4px rgb(20, 20, 20);
-    -o-box-shadow: 0 0 4px rgb(20, 20, 20);
-    -webkit-box-shadow: 0 0 4px rgb(20, 20, 20);
-    -ms-box-shadow: 0 0 4px rgb(20, 20, 20);
-    background: rgba(80, 80, 80, 0.5);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    line-height: 46px;
-    height: 46px;
-    z-index: 1;
-    font-family: "Monda", sans-serif;
-    font-size: 0.9em;
-}
-
-nav ul {
-    display: inline;
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 6px;
-    padding: 6px;
-}
-
-nav a {
-    color: rgb(170, 170, 170);
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.6s ease-in-out;
-    -moz-transition: all 0.6s ease-in-out;
-    -o-transition: all 0.6s ease-in-out;
-    -webkit-transition: all 0.6s ease-in-out;
-    -ms-transition: all 0.6s ease-in-out;
-}
-
-nav a:hover {
-    color: rgb(180, 220, 170);
-}
-
-/* --------------------------------------------------------------- */
-/* ------------------------- sections ---------------------------- */
-
-section {
-    height: 500px;
-    width: 960px;
-    padding: 150px;
-    margin-bottom: 700px;
-    color: rgb(220, 250, 200);
-}
-
-section:last-of-type {
-    margin-bottom: 0;
-}
-
-section a {
-    color: rgb(200, 200, 200);
-    text-decoration: underline;
-}
-
-section article {
-    padding: 20px;
-    overflow: hidden;
-}
-
-section .left {
-    width: 600px;
-    float: left;
-}
-
-section .right {
-    float: right;
-}
-
-section#intro h1 {
-    text-align: center;
-    margin: 0 auto;
-    font-size: 5em;
-}
-
-section#contacts article {
-    padding: 6px;
-    text-align: center;
-    height: 143px;
-}
-
-section#contacts img {
-    margin: 6px;
-    opacity: 0.8;
-    -moz-opacity: 0.8;
-    -o-opacity: 0.8;
-    -webkit-opacity: 0.8;
-    -ms-opacity: 0.8;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-}
-
-section#contacts img:hover {
-    opacity: 1;
-    -moz-opacity: 1;
-    -o-opacity: 1;
-    -webkit-opacity: 1;
-    -ms-opacity: 1;
-    border-radius: 0;
-    -moz-border-radius: 0;
-    -o-border-radius: 0;
-    -webkit-border-radius: 0;
-    -ms-border-radius: 0;
-}
-
-/* --------------------------------------------------------------- */
-/* --------------------------- icons ----------------------------- */
-
-.green-icon {
-    border-radius: 20px;
-    -moz-border-radius: 20px;
-    -o-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -ms-border-radius: 20px;
-    background: rgb(146, 195, 113);
-    border: 1px solid rgb(200, 200, 200);
-}
-
-.blue-icon {
-    border-radius: 20px;
-    -moz-border-radius: 20px;
-    -o-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -ms-border-radius: 20px;
-    background: rgb(32, 80, 129);
-    border: 1px solid rgb(200, 200, 200);
-}
-
-/* --------------------------------------------------------------- */
-/* ------------------------ skills chart ------------------------- */
-
-#skills-container {
-    width: 300px;
-    height: 230px;
-    margin: 0 auto;
+p {
+    font-size: 1.2em;
 }
 
 /* --------------------------------------------------------------- */
@@ -186,8 +22,67 @@ section#contacts img:hover {
 .hobbies {
     display: inline;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .hobbies li {
     display: inline;
+}
+
+/* --------------------------------------------------------------- */
+/* ---------------------------- main ----------------------------- */
+
+.container-background {
+    min-height: 100%;
+    box-shadow: inset 0 0 200px rgba(0,0,0,.5);
+}
+
+.container {
+    max-width: 970px;
+    min-height: 100%;
+}
+
+.page-header {
+    border-bottom-color: #444444;
+}
+
+.page-header h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.page-header small {
+    font-size: 0.8em;
+}
+
+.line {
+    border-bottom: 1px solid #444;
+    margin: 40px 0 20px;
+    padding-bottom: 9px;
+}
+
+/* --------------------------------------------------------------- */
+/* -------------------------- buttons ---------------------------- */
+
+.img-btn {
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.img-btn:hover {
+    border-color: #444;
+}
+
+/* --------------------------------------------------------------- */
+/* -------------------------- center ----------------------------- */
+@media (min-height: 800px) and (min-width: 970px) {
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-height: 500px;
+        margin-top: -250px;
+        margin-left: -485px;
+    }
 }
